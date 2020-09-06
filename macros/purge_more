@@ -1,0 +1,4 @@
+while true
+    M291 P"Purge more filament?" R"Filament runout detected!" S3
+    G1 E10 F500
+    M400 ; Wait for current moves to finish

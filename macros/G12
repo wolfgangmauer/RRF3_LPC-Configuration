@@ -1,0 +1,30 @@
+while true
+	if iterations = 2
+		break
+	G1 X{move.axes[0].min} Y{move.axes[1].min} F10000
+	G1 X{move.axes[0].min+14} Y{move.axes[1].min+5} F10000
+	G1 X{move.axes[0].min} Y{move.axes[1].min+10} F10000
+	G1 X{move.axes[0].min+14} Y{move.axes[1].min+15} F10000
+	G1 X{move.axes[0].min} Y{move.axes[1].min+20} F10000
+	G1 X{move.axes[0].min+14} Y{move.axes[1].min+25} F10000
+	G1 X{move.axes[0].min} Y{move.axes[1].min+30} F10000
+	G1 X{move.axes[0].min+14} Y{move.axes[1].min+35} F10000
+	G1 X{move.axes[0].min} Y{move.axes[1].min+40} F10000
+	G1 X{move.axes[0].min+14} Y{move.axes[1].min+45} F10000
+	G1 X{move.axes[0].min} Y{move.axes[1].min+40} F10000
+	G1 X{move.axes[0].min+14} Y{move.axes[1].min+45} F10000
+	G1 X{move.axes[0].min+14} Y{move.axes[1].min+45} F10000
+	G1 X{move.axes[0].min} Y{move.axes[1].min+40} F10000
+	G1 X{move.axes[0].min+14} Y{move.axes[1].min+45} F10000
+	G1 X{move.axes[0].min} Y{move.axes[1].min+40} F10000
+	G1 X{move.axes[0].min+14} Y{move.axes[1].min+35} F10000
+	G1 X{move.axes[0].min} Y{move.axes[1].min+30} F10000
+	G1 X{move.axes[0].min+14} Y{move.axes[1].min+25} F10000
+	G1 X{move.axes[0].min} Y{move.axes[1].min+20} F10000
+	G1 X{move.axes[0].min+14} Y{move.axes[1].min+15} F10000
+	G1 X{move.axes[0].min} Y{move.axes[1].min+10} F10000
+	G1 X{move.axes[0].min+14} Y{move.axes[1].min+5} F10000
+	G1 X{move.axes[0].min} Y{move.axes[1].min} F10000
+	G1 X{move.axes[0].min+5} Y{move.axes[1].min+45} F10000
+	G1 X{move.axes[0].min+10} Y{move.axes[1].min+45} F10000
+	G1 X{move.axes[0].min+10} Y{move.axes[1].min} F10000
