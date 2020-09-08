@@ -1,7 +1,7 @@
 # RRF3_LPC-Configuration
 
 BLTouch connected to ZMIN<br>
-Filament runout sensor connected to XMAX
+Filament runout sensor connected to XMAX<br>
 Independent Dual Z, connected to Z and E1<br>
 Y-Endstop at max (attached at the rear)<br>
 BTT Relay 1.2 (Power off after print) connected to ZMAX<br>
