@@ -10,7 +10,7 @@ M140 S-273.1 R0
 G92 E0
 M84
 M106 S255
-M117 "Cool down, please wait"
+echo "Cool down, please wait"
 while true
 	if heat.heaters[1].current < 50.0 ; Wait until T0 dropped below 50°C
 		break
