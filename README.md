@@ -1,9 +1,10 @@
 # RRF3_LPC-Configuration
 
-BLTouch<br>
+BLTouch connected to ZMIN<br>
+Filament runout sensor connected to XMAX
 Independent Dual Z, connected to Z and E1<br>
 Y-Endstop at max (attached at the rear)<br>
-BTT Relay 1.2 (Power off after print)<br>
+BTT Relay 1.2 (Power off after print) connected to ZMAX<br>
 WiFi module https://www.tindie.com/products/pcr/reprapfirmware-wifi-adapterboard-for-skr1314/<br>
 
 
