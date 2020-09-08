@@ -1,22 +1,9 @@
-;G30 P0 X20 Y117.5 Z-99999 ; probe near a leadscrew, half way along Y axis
-;G30 P1 X215 Y117.5 Z-99999 S2 ; probe near a leadscrew and calibrate 2 motors
-
 M561                    ; clear any bed transform
 ; If the printer hasn't been homed, home it
 if !move.axes[0].homed || !move.axes[1].homed || !move.axes[2].homed
   G28
 
-while true
-  if iterations = 5
-    abort "Too many auto calibration attempts"
-  G30 P0 X20 Y117.5 Z-99999 ; probe near a leadscrew, half way along Y axis
-  if result != 0
-    continue
-  G30 P1 X215 Y117.5 Z-99999 S2 ; probe near a leadscrew and calibrate 2 motors
-  if result != 0
-    continue
-  if move.calibration.final.deviation <= 0.02
-    break
-  echo "Repeating calibration because deviation is too high (" ^ move.calibration.final.deviation ^ "mm)"
+G30 P0 X20 Y117.5 Z-99999 ; probe near a leadscrew, half way along Y axis
+G30 P1 X215 Y117.5 Z-99999 S2 ; probe near a leadscrew and calibrate 2 motors
 
 echo "Auto calibration successful, deviation", move.calibration.final.deviation ^ "mm"
