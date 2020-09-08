@@ -10,7 +10,7 @@ M669 K1                                                ; select CoreXY mode
 ; Network
 M552 S0                                                ; disable Network
 M550 P"BLV1"                                           ; set printer name
-M587 S"FRITZ!B'o'x 6490 C'a'b'l'e" P"G'e'l'i2904W'o'l'f3001"
+M587 S"SSID" P"PASSWD"
 M552 P0.0.0.0 S1                                       ; enable network and acquire dynamic address via DHCP
 M586 P0 S1                                             ; enable HTTP
 M586 P1 S0                                             ; disable FTP (RRF3_LPC limitation)
