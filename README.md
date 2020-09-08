@@ -7,7 +7,7 @@ Y-Endstop at max (attached at the rear)<br>
 BTT Relay 1.2 (Power off after print) connected to ZMAX<br>
 WiFi module https://www.tindie.com/products/pcr/reprapfirmware-wifi-adapterboard-for-skr1314/<br>
 
-For your purposes adjust the dimensions in the config.g<br>
+For your purposes adjust the dimensions/locations in the config.g<br>
 ```
 ; Axis Limits
 M208 X-37:235 Y-67:306 Z0:195                          ; set axis min/max
